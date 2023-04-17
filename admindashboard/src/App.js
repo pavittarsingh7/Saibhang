@@ -3,15 +3,15 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import Dashboard from "./layout/Dashboard";
-import SearchBar from "./components/SearchBar";
+import LandingPage from "./layout/LandingPage";
 
 function App() {
   return (
     <>
-      <div className="contianer bg-secondary-subtle">
+      <div className="contianer">
         <Routes>
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/" element={<SearchBar />} />
+          <Route path="/" element={<LandingPage />} />
         </Routes>
       </div>
     </>
