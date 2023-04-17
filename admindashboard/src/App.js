@@ -1,22 +1,18 @@
-import React from 'react'
-import './App.css'
-import Sidebar from './components/Sidebar'
-import Main from "./components/Main";
-import TopBar from './components/TopBar';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+
+import Dashboard from "./layout/Dashboard";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   return (
     <>
       <div className="contianer bg-secondary-subtle">
-        <div className="row">
-          <div className="col-2">
-           <Sidebar />
-          </div>
-          <div className="col-10">
-            <TopBar />
-            {/* outlet */}<Main />
-          </div>
-        </div>
+        <Routes>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<SearchBar />} />
+        </Routes>
       </div>
     </>
   );
