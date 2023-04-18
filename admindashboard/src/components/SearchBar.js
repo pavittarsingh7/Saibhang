@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function SearchBar() {
+  var CardImg = "https://placehold.co/600x400";
   return (
     <>
       <div>
@@ -11,7 +12,7 @@ export default function SearchBar() {
                 <div className="position-relative">
                   <input type="text" className="form-control searchbar" placeholder="Search" />
                   <span className="top-50 end-0 position-absolute translate-middle-y me-2">
-                    <i class="bi bi-search"></i>
+                    <i className="bi bi-search"></i>
                   </span>
                 </div>
               </div>
@@ -21,35 +22,34 @@ export default function SearchBar() {
             <div className="row">
               <div className="offset-1 col-3">Serach options</div>
               <div className="col-7">
-                <div class="card">
-                  <div class="row g-0">
-                    <div class="col-md-4 col-sm-12">
-                      <img
-                        src="../assets/activeLinkBG.png"
-                        class="img-fluid rounded-start"
-                        alt="..."
-                      />
+                <div className="card">
+                  <div className="row g-0">
+                    <div className="card-header">Header</div>
+                    <div className="col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
+                      <div className="p-2">
+                        <img
+                          src={CardImg}
+                          className="img-fluid rounded mx-auto d-block"
+                          alt="cardImg"
+                        />
+                      </div>
                     </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
+                    <div className="col-md-8">
+                      <div className="card-body">
+                        <h5 className="card-title">title</h5>
+                        <p className="card-text">
                           This is a wider card with supporting text below as a natural lead-in to
                           additional content. This content is a little bit longer.
-                        </p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">Last updated 3 mins ago</small>
                         </p>
                       </div>
                     </div>
                   </div>
-
-                  <div class="card-header">Featured</div>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p>sadfsaf</p>
+                  <div className="card-footer">
+                    Footer
+                    <p className="card-text float-end">
+                      <small className="text-body-secondary">Last updated 3 mins ago</small>
+                    </p>
                   </div>
-                  <div class="card-footer">Footer</div>
                 </div>
               </div>
             </div>
