@@ -58,47 +58,47 @@ export default function SearchBar() {
                     <input placeholder="cataory or Item" />
                   </div>
                   <div className="col-12">
-                    <label for="customRange1" class="form-label d-flex">
+                    <label for="customRange1" className="form-label d-flex">
                       Price Range from <p>$10</p> to <p>$500</p>
                     </label>
 
-                    <input type="range" class="form-range" id="customRange1"></input>
+                    <input type="range" className="form-range" id="customRange1"></input>
                   </div>
 
                   <div className="col-12 text-bg-secondary rounded">
                     <div className="h6">Category</div>
                   </div>
                   <div className="col-12">
-                    <div class="form-check">
+                    <div className="form-check">
                       <input
-                        class="form-check-input"
+                        className="form-check-input"
                         type="checkbox"
                         value=""
                         id="flexCheckDefault"
                       />
-                      <label class="form-check-label" for="flexCheckDefault">
+                      <label className="form-check-label" for="flexCheckDefault">
                         checkbox
                       </label>
                     </div>
-                    <div class="form-check">
+                    <div className="form-check">
                       <input
-                        class="form-check-input"
+                        className="form-check-input"
                         type="checkbox"
                         value=""
                         id="flexCheckDefault"
                       />
-                      <label class="form-check-label" for="flexCheckDefault">
+                      <label className="form-check-label" for="flexCheckDefault">
                         checkbox
                       </label>
                     </div>
-                    <div class="form-check">
+                    <div className="form-check">
                       <input
-                        class="form-check-input"
+                        className="form-check-input"
                         type="checkbox"
                         value=""
                         id="flexCheckDefault"
                       />
-                      <label class="form-check-label" for="flexCheckDefault">
+                      <label className="form-check-label" for="flexCheckDefault">
                         checkbox
                       </label>
                     </div>
@@ -110,7 +110,7 @@ export default function SearchBar() {
                   <div className="col-12">
                   <input type="date" />
                     <span className="d-flex justify-content-between"><p>Start Date</p><p>End Date</p></span>
-                    <input type="range" class="form-range" id="customRange1"></input>
+                    <input type="range" className="form-range" id="customRange1"></input>
                   </div>
                 </div>
               </div>
