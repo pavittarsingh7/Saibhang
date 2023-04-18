@@ -3,7 +3,8 @@
   background-color: aquamarine;
   border-radius: 34% 66% 68% 32% / 44% 50% 50% 56%;
 }
-.searchbar{
+
+.searchbar {
   transition: height 0.5s ease-in-out;
 }
 .searchbar:hover {
@@ -27,5 +28,30 @@
 @keyframes linearGradientMove {
   100% {
     background-position: 4px 0, -4px 100%, 0 -4px, 100% 4px;
+  }
+}
+
+.resultCard {
+  background: rgba(255, 255, 255, 0.733);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.resultCard:hover {
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.075), 0 0 8px rgba(0, 0, 0, 0.6) !important;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
   }
 }

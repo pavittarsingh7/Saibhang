@@ -4,7 +4,7 @@ import SearchBar from "../components/SearchBar";
 
 export default function LandingPage() {
   return (
-    <div className="vh-100 bg-secondary">
+    <div className="vh-100 bg-secondary-subtle">
       <NavBar />
       <SearchBar />
     </div>
