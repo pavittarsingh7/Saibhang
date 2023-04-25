@@ -1,0 +1,20 @@
+.HomeNavLink {
+  color: #2e397e !important;
+  font-weight: 500;
+  font-size: 18px;
+}
+.HomeNavLink:hover {
+  border-bottom: 4px solid #2e397e;
+}
+
+.btn-dark-blue {
+  background-color: var(--dark-color) !important;
+  color: white !important;
+}
+
+.home-text {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 80px;
+  color: var(--text-dark-color) !important;
+}

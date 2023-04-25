@@ -5,9 +5,9 @@ export default function Header() {
   return (
     <>
       <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary shadow sticky-top">
-          <div className="container">
-            <a class="navbar-brand" href="/">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top">
+          <div className="container-fluid mx-md-5 px-md-5">
+            <a class="navbar-brand ms-md-5" href="/">
               <img src={logo} alt="logo" />
             </a>
             <button
@@ -22,19 +22,29 @@ export default function Header() {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li className="nav-item HomeNavLink me-md-5">
                   <a className="nav-link active" aria-current="page" href="/">
                     Home
                   </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item HomeNavLink me-md-5">
                   <a className="nav-link" href="/">
-                    Link
+                    Agent
+                  </a>
+                </li>
+                <li className="nav-item HomeNavLink me-md-5">
+                  <a className="nav-link" href="/">
+                    Partner
+                  </a>
+                </li>
+                <li className="nav-item HomeNavLink me-md-5">
+                  <a className="nav-link" href="/">
+                    Institutions
                   </a>
                 </li>
               </ul>
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-dark-blue rounded-pill px-5 py-2 me-5" type="submit">
                 Login
               </button>
             </div>

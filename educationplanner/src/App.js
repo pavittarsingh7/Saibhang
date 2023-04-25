@@ -1,9 +1,11 @@
 import Header from "./layout/Header";
-import "./App.css"
+import "./App.css";
+import Main from "./layout/Main";
 function App() {
   return (
     <>
-    <Header />
+      <Header />
+      <Main />
     </>
   );
 }
