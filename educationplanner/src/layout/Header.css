@@ -4,6 +4,7 @@
   font-size: 18px;
   border-bottom: 4px solid transparent;
 }
+
 .HomeNavLink:hover {
   border-bottom: 4px solid #2e397e;
 }
@@ -26,8 +27,14 @@
 
 .formControl:focus {
   border: none;
-
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .imgResponsive {
+     max-width: 100%;
+     height: auto;
+  }
 }

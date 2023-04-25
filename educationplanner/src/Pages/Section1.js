@@ -8,10 +8,10 @@ export default function Section1() {
   return (
     <>
       <div className="container mt-5">
-        <div className="row row-cols-auto align-items-center">
-          <div className="col-md-6">
+        <div className="row row-cols-auto">
+          <div className="col-md-6 mt-5">
             <div className="row">
-              <div className="col-12 ">
+              <div className="col-12">
                 <div className="home-text">
                   Unlock Your Future,{" "}
                   <span class="position-relative" style={{ color: "#2e397e" }}>
@@ -30,8 +30,11 @@ export default function Section1() {
                   <div className="position-relative d-flex">
                     <img src={flag} alt="flag" className="rounded-circle me-1" width={"36px"} />
 
-                    <select className="border-0 form-control w-25 formControl">
-                      <option value="1">
+                    <select
+                      className="border-0 form-select w-25 formControl"
+                      aria-label="country select"
+                    >
+                      <option value="1" selected>
                         <span className="me-3">Canada</span>
                       </option>
                       <option value="2">Austria</option>
@@ -52,24 +55,29 @@ export default function Section1() {
                   </div>
                 </div>
               </div>
+              <div className="col-12 mt-2 ms-2">
+                <a className="fs-5" href="/">
+                  Advance Search
+                </a>
+              </div>
             </div>
           </div>
-          <div className="col-md-6">
-            <img src={demostudents} alt="demo students" />
+          <div className="col-md-6 ps-1">
+            <img src={demostudents} className="imgResponsive" alt="demo students" />
           </div>
         </div>
       </div>
       <div className="btn-dark-blue p-4">
         <div className="container">
-          <div className="row">
+          <div className="row justify-content-center">
             <div className="col">
-              <img src={globeInfo1} alt="globeInfo1" />{" "}
+              <img src={globeInfo1} alt="globeInfo1" />
             </div>
             <div className="col">
-              <img src={globeInfo1} alt="globeInfo1" />{" "}
+              <img src={globeInfo1} alt="globeInfo1" />
             </div>
             <div className="col">
-              <img src={globeInfo1} alt="globeInfo1" />{" "}
+              <img src={globeInfo1} alt="globeInfo1" />
             </div>
           </div>
         </div>

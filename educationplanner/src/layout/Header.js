@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <>
       <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top">
+        <nav className="navbar navbar-expand-lg shadow-sm fixed-top">
           <div className="container-fluid mx-md-5 px-md-5">
             <a class="navbar-brand ms-md-5" href="/">
               <img src={logo} alt="logo" />
@@ -43,10 +43,59 @@ export default function Header() {
                     Institutions
                   </a>
                 </li>
+                <li className="nav-item HomeNavLink me-md-5">
+                  <a className="nav-link" href="/">
+                    Leads
+                  </a>
+                </li>
               </ul>
-              <button className="btn btn-dark-blue rounded-pill px-5 py-2 me-5" type="submit">
-                Login
-              </button>
+
+              <div class="dropdown">
+                <button
+                  type="button"
+                  class="btn btn-dark-blue rounded-pill px-5 py-3 me-5 dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-auto-close="outside"
+                >
+                  Login
+                </button>
+                <form class="dropdown-menu p-2">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">
+                      Email address
+                    </label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleDropdownFormEmail2"
+                      placeholder="email@example.com"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">
+                      Password
+                    </label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleDropdownFormPassword2"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck2" />
+                      <label class="form-check-label" for="dropdownCheck2">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-dark-blue rounded">
+                    Sign in
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </nav>
