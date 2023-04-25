@@ -2,8 +2,13 @@
   color: #2e397e !important;
   font-weight: 500;
   font-size: 18px;
+  border-bottom: 4px solid transparent;
 }
 .HomeNavLink:hover {
+  border-bottom: 4px solid #2e397e;
+}
+
+.HomeNavLink .active {
   border-bottom: 4px solid #2e397e;
 }
 
@@ -17,4 +22,12 @@
   font-size: 54px;
   line-height: 80px;
   color: var(--text-dark-color) !important;
+}
+
+.formControl:focus {
+  border: none;
+
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
 }
