@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "fa-regular";
+  src: url("../assets/fonts/fa-regular-400.eot"), url("../assets/fonts/fa-regular-400.woff2") format("woff2"),
+    url("../assets/fonts/fa-regular-400.woff") format("woff"), url("../assets/fonts/fa-regular-400.ttf") format("truetype");
+  font-weight: normal;
+}
+html {
+  font-family: "fa-regular" !important;
+}
 body {
   margin: 0;
   padding: 0;
@@ -63,11 +72,11 @@ body {
 }
 
 .header-link a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .header-link a:hover {
-    text-decoration: underline;
-    transition: all 0.3s linear;
+  text-decoration: underline;
+  transition: all 0.3s linear;
 }
