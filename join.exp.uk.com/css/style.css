@@ -6,6 +6,10 @@
 }
 html {
   font-family: "fa-regular" !important;
+  font-size: 12px;
+}
+p {
+  font-size: 2rem;
 }
 body {
   margin: 0;
@@ -38,6 +42,7 @@ body {
 .link-gray {
   color: #b9b9b9;
   text-decoration: none;
+  font-size: 1.8rem;
 }
 .link-gray:hover {
   color: #ffffff;
@@ -49,6 +54,7 @@ body {
 }
 .list-inline-item {
   list-style: none;
+  font-size: 2rem;
 }
 
 .social-links a {
@@ -74,9 +80,54 @@ body {
 .header-link a {
   text-decoration: none;
   color: #fff;
+  position: relative;
 }
 
-.header-link a:hover {
-  text-decoration: underline;
+.header-link a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.3s linear;
+}
+
+.header-link a:hover::before {
+  transform: scaleX(1);
+}
+
+.hero-content {
+  min-height: calc(100vh - 400px);
+}
+.hero-text p {
+  font-size: 5rem;
+  width: 50rem;
+}
+.hero-text a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.hero-text a i {
+  color: #fff;
+  text-decoration: none;
+  --icon-size: 4rem;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  font-size: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50em;
   transition: all 0.3s linear;
+}
+
+.hero-text a i:hover {
+  background: #ffffff;
+  color: #09033f;
 }
